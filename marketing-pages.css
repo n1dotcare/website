@@ -452,7 +452,7 @@ body.marketing-page { color: var(--ink); background: var(--cream); }
 .marketing-footer-links a { display: block; margin-top: 13px; color: #d7d2cb; font-size: 13px; }
 .marketing-footer-bottom { padding-top: 27px; border-top: 1px solid #47413a; color: #bcb6af; font-size: 11px; }
 
-@media (max-width: 1160px) {
+@media (max-width: 1023px) {
   .marketing-page .shell { width: min(100% - 38px, 1320px); }
   .marketing-nav-inner { grid-template-columns: 1fr auto; }
   .marketing-toggle { display: grid; }
