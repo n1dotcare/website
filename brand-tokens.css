@@ -10,8 +10,8 @@
    reads as the same weight across families. The brand colours are steps
    in these ramps, not exceptions to them:
 
-       wine  #852f48 -> rose-800     berry #a54559 -> rose-600
-       peach #ef9b77 -> apricot-300  green #17674f -> moss-600
+       Homepage source of truth: Smoked Birch & Copper Oxide
+       wine/charcoal #2a2b2a, berry/teal #376361, cream #f3ede2
 
    Generated. Edit the generator, not this file.
    ========================================================================== */
@@ -179,41 +179,23 @@
 /* --------------------------------------------------------------------------
    Marketing-site compatibility.
 
-   The static site consumes these names directly. They are aliases onto the
-   ramps above, so the two surfaces cannot drift: changing a ramp step
-   changes both. `.tonal` is carried because art-directions.css re-declares
+   Semantic aliases match the homepage Smoked Birch & Copper Oxide palette
+   (index-19). `.tonal` is carried because art-directions.css re-declares
    the same names on `body.tonal` at equal specificity — this file must load
-   last to win. Retire these names once the static site reads the ramps.
-
-   All of these are load-bearing: --blush, --line, --muted and --green have
-   no other definition anywhere, and marketing-pages.css alone reads --muted
-   40 times and --line 77 times. Do not prune this list by inspection.
-
-   --line and --control-line are not interchangeable. --line is the
-   decorative hairline (sand-200, 1.38:1 on the page) and is correct for
-   separating content; a control's border is a component boundary and owes
-   3:1 under WCAG 1.4.11, which is --control-line (sand-500, 3.58:1). The
-   static contact form drew its inputs in --line and measured 1.58:1.
-
-   `--muted` here means muted TEXT, which is what the static site has always
-   meant by it. The component theme previously reused the same name for a
-   muted SURFACE — one name, two opposite jobs, and the wrong pairing
-   rendered body copy at 1.16:1. index.css no longer redeclares it; it maps
-   Tailwind's --color-muted from --surface-muted instead, so the collision is
-   gone without the fix depending on stylesheet order.
+   last to win.
    -------------------------------------------------------------------------- */
 
 :root,
 .tonal {
-  --wine: var(--n1-rose-800);
-  --berry: var(--n1-rose-600);
-  --peach: var(--n1-apricot-300);
-  --blush: var(--n1-apricot-100);
-  --cream: var(--n1-sand-50);
-  --paper: var(--n1-sand-25);
-  --ink: var(--n1-sand-950);
-  --line: var(--n1-sand-200);
-  --muted: var(--n1-sand-600);
-  --green: var(--n1-moss-600);
-  --control-line: var(--n1-sand-500);
+  --wine: #2a2b2a; /* smoked birch */
+  --berry: #376361; /* smoked birch */
+  --peach: #48a9a6; /* smoked birch */
+  --blush: #d3e7e3; /* smoked birch */
+  --cream: #f3ede2; /* smoked birch */
+  --paper: #fbf9f5; /* smoked birch */
+  --ink: #171817; /* smoked birch */
+  --line: #c7c2b9; /* smoked birch */
+  --muted: #6a6864; /* smoked birch */
+  --green: #d4b483; /* smoked birch */
+  --control-line: #96938c; /* smoked birch */
 }
