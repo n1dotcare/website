@@ -2,6 +2,8 @@
 
 Production-oriented marketing site for [n1.care](https://n1.care), based on the **Smoked Birch / Copper Patina** art direction.
 
+**Live site:** [https://n1dotcare.github.io/website/](https://n1dotcare.github.io/website/)
+
 This repository holds the static marketing redesign (HTML/CSS/JS + assets). It is not yet wired to production DNS.
 
 ## Local preview
