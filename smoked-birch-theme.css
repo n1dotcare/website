@@ -1,0 +1,31 @@
+/* Smoked Birch & Copper Oxide — Sanctuary Longevity
+   Source of truth: homepage (index-19) palette.
+   Semantic tokens remap so marketing pages match the homepage. */
+:root,
+.tonal,
+.marketing-page {
+  --wine: #2a2b2a;
+  --berry: #376361;
+  --peach: #48a9a6;
+  --blush: #d3e7e3;
+  --cream: #f3ede2;
+  --paper: #fbf9f5;
+  --ink: #171817;
+  --line: #c7c2b9;
+  --muted: #6a6864;
+  --green: #d4b483;
+  --control-line: #96938c;
+
+  --font-heading: #171817;
+  --font-body: #171817;
+  --font-muted: #6a6864;
+  --font-accent: #2a2b2a;
+  --font-inverse: #f3ede2;
+  --font-inverse-muted: #d3e7e3;
+
+  --mist: #c7c2b9;
+  --surface-elevated: #f3ede2;
+  --surface-sunken: #d3e7e3;
+  --dark-canvas: #171817;
+  --dark-surface: #232423;
+}
